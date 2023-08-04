@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-arimo: Arimo;
+  --font-stardos-stencil: "Stardos Stencil";
+  --button: Inter;
+  --cta: "DM Sans";
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --button-size: 18px;
+  --text-size: 16px;
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --white-background: #fff;
+  --color-crimson-100: #dd2242;
+  --color-black: #000;
+  --color-gray-100: #fffdfd;
+  --color-gray-200: #111010;
+  --color-gray-300: #0d0000;
+  --light-grey-input-fiels-forms: #f6f6f6;
+  --grey-input-text: #ababab;
+  --color-snow: #fffcfc;
+  --color-maroon: #781313;
+
+  /* Paddings */
+  --padding-mid: 17px;
+  --padding-base: 16px;
+  --padding-5xl: 24px;
+
+  /* border radiuses */
+  --br-9xs: 4px;
+  --br-103xl: 122px;
+}
