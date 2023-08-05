@@ -34,7 +34,7 @@
   color: white;
   font-size: 18px;
   font-weight: bold;
-  background-color: rgba(100, 0, 0, 0.7); /* Color guinda */
+  background-color: rgb(98, 21, 24, 0.7); /* Color guinda */
   padding: 10px 0 10px 0 ;
   width: 100%; /* Ajusta el ancho del texto según tus necesidades */
 }
@@ -48,7 +48,7 @@
 
 .slide-buttons button {
   background-color: #f2f2f2; /* Color guinda */
-  color: #800000;
+  color: #621518;
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
@@ -59,6 +59,6 @@
 
 /* Agrega estilos adicionales para el encabezado aquí si lo deseas */
 header {
-  background-color: #800000;
+  background-color: #621518;
   padding: 20px;
 }
