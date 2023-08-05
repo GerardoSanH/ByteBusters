@@ -34,8 +34,8 @@ function Mapa() {
                ))}
             </select>
          </div>
-         <TransformWrapper style={{ width: '100%', maxWidth: 'unset' }}>
-            <TransformComponent style={{ width: '100%', maxWidth: 'unset' }}>
+         <TransformWrapper >
+            <TransformComponent >
                { componenteSeleccionado }
             </TransformComponent>
          </TransformWrapper>

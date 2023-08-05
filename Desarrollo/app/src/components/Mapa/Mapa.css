@@ -5,13 +5,12 @@ svg{
    width: 100%;
 }
 
-.transform-component-module_wrapper__SPB86{
+.react-transform-wrapper{
    width: 100% !important;
    height: auto;
-   border: 1ps solid black;
 }
 
-.transform-component-module_content__FBWxo{
+.react-transform-component{
    width: 100% !important;
    height: auto;
 }
@@ -23,7 +22,7 @@ svg{
    display: flex;
    flex-direction: column;
    align-items: center;
-   min-height: 450px;
+   min-height: 750px;
 }
 
 .selector{
