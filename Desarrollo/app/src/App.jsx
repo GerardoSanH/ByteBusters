@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import Piso1 from './components/Piso1';
 import Piso2 from './components/Piso2';
-import Piso3 from './components/Piso3';
+import Piso3 from './components/ComponentePrueba3';
 
 const pisos = [
   { nombre: 'Piso 1', codigo: 'P1', componente: <Piso1 /> },
