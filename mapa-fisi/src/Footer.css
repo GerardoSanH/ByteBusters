@@ -1,0 +1,49 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: una fracción, dos fracciones y una fracción */
+  gap: 20px; /* Espacio entre columnas */
+  padding: 20px;
+  background-color: rgba(100, 0, 0, 0.7);
+}
+
+/* Estilos para la columna del centro que es una grid */
+.column2 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); /* Dos filas con el mismo tamaño */
+  gap: 20px; /* Espacio entre filas */
+}
+
+/* Estilos para las celdas de la grid del centro */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas con el mismo tamaño */
+  gap: 10px; /* Espacio entre celdas */
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos adicionales para cada celda de la grid del centro */
+/* .grid-item:nth-child(1) {
+  Estilos para la primera celda
+}
+
+.grid-item:nth-child(2) {
+  Estilos para la segunda celda
+}
+
+.grid-item:nth-child(3) {
+  Estilos para la tercera celda
+} */
+
+/* Estilos adicionales para las columnas del footer */
+/* .column1 {
+  Estilos para la columna 1
+}
+
+.column3 {
+  Estilos para la columna 3
+} */
