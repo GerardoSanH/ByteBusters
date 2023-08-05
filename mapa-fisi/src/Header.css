@@ -1,3 +1,9 @@
+.header{
+  background-color: #621518;
+  padding-bottom: 10px;
+}
+
+
 /* Estilos para el contenedor del slideshow */
 .slideshow {
   display: grid;
@@ -43,6 +49,7 @@
 /* Estilos para los botones */
 .slide-buttons {
   display: flex;
+  background-color: #621518;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -74,6 +81,9 @@
 }
 /* Estilos para pantallas con ancho igual o menor a 1080px */
 @media screen and (max-width: 1080px) {
+  .img-container{
+    display: none;
+  }
   .slide-column {
     grid-column: 1 / -1; /* Las columnas ocupan todo el ancho */
   }

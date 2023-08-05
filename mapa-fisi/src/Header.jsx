@@ -32,7 +32,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className='header'>
       <div className="slideshow">
         <div className="slide" style={{ backgroundColor: '#621518' }}>
           <div className="slide-content">
