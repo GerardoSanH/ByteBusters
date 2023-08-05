@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react';
+
+import Piso1 from './components/Piso1';
+import Piso2 from './components/Piso2';
+import Piso3 from './components/Piso3';
+
+const pisos = [
+  { nombre: 'Piso 1', codigo: 'P1', componente: <Piso1 /> },
+  { nombre: 'Piso 2', codigo: 'P2', componente: <Piso2 /> },
+  { nombre: 'Piso 3', codigo: 'P3', componente: <Piso3 /> },
+]
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedOption, setSelectedOption] = useState('P1');
+
+  const handleSelectChange = (event) => {
+    const pisoSeleccionado = event.target.value;
+    setSelectedOption(pisoSeleccionado);
+  }
+
+  const selectedComponent = pisos.find(piso => piso.codigo == selectedOption).componente;
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='map'>
+      <h2>Selecciona una opción:</h2>
+      <select value={selectedOption} onChange={handleSelectChange}>
+        {pisos.map(piso => (
+          <option key={piso.nombre} value={piso.codigo}>
+            {piso.nombre}
+          </option>
+        ))}
+      </select>
+      {selectedComponent}
+    </div>
+  );
 }
 
-export default App
+export default App;
