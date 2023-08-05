@@ -1,37 +1,41 @@
 * {
    font-family: 'Poppins', sans-serif !important;
 }
-svg{
+
+svg {
    width: 100%;
 }
 
-.react-transform-wrapper{
+.react-transform-wrapper {
    width: 100% !important;
    height: auto;
 }
 
-.react-transform-component{
+.react-transform-component {
    width: 100% !important;
    height: auto;
 }
 
-.map-section{
-   background-color: lightgray;
+.map-wrapper {
+   padding: 20px 200px;
+}
+
+.map-section {
    margin: 10px;
    padding: 0px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   min-height: 750px;
+   min-height: 550px;
 }
 
-.selector{
+.selector {
    margin-top: 10px;
-   display:  flex;
+   display: flex;
    gap: 20px;
 }
 
-.map-wrapper{
+.map-wrapper {
    width: 100% !important;
    display: flex;
    flex-direction: column;
@@ -44,4 +48,11 @@ svg g :is(path, rect):hover {
 
 g :is(path, rect) {
    transition: fill .5s;
+}
+
+@media screen and (max-width: 850px) {
+
+   .map-wrapper {
+      padding: 20px 0;
+   }
 }

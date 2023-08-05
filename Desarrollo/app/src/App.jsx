@@ -1,10 +1,16 @@
 import './App.css'
-import Mapa from './components/Mapa/Mapa'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import MainContent from './components/Main/MainContent';
 
 function App() {
 
   return (
-    <Mapa/>
+    <>
+      <Header />
+      <MainContent/>
+      <Footer/>
+    </>
   );
 }
 

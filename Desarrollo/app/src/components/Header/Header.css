@@ -1,0 +1,89 @@
+.header{
+  background-color: #621518;
+  padding-bottom: 10px;
+}
+
+
+/* Estilos para el contenedor del slideshow */
+.slideshow {
+  display: flex;
+  gap: 20px; /* Espacio entre columnas */
+  align-items: center;
+  height: 30vh;
+  overflow: hidden;
+  width: 100%; /* Máximo ancho para el slideshow */
+  margin: 0 auto;
+  background-color: #621518;
+}
+/* Estilos para el contenido del slide */
+.slide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas con el mismo tamaño */
+  height: inherit;
+  gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilos para las columnas */
+.slide-column {
+  background-color: #621518;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilos para el texto */
+.slide-text {
+  color: white;
+}
+/* Estilos para el contenedor de cada diapositiva */
+.slide {
+  display: grid;
+  gap: 20px; /* Espacio entre columnas */
+  padding: 20px;
+  color: white;
+}
+
+/* Estilos para los botones */
+.slide-buttons {
+  display: flex;
+  background-color: #621518;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slide-buttons button {
+  background-color: #621518;
+  color: white;
+  border: none;
+  margin: 0 10px 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.slide-buttons button:hover {
+  background-color: white;
+  color: #621518;
+  border-color: #621518;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide img {
+  max-width: 50%;
+  /* Ajusta la altura máxima según tus necesidades */
+  object-fit: cover;
+}
+/* Estilos para pantallas con ancho igual o menor a 1080px */
+@media screen and (max-width: 800px) {
+  .img-container{
+    display: none;
+  }
+
+  .slide-content{
+    grid-template-columns: 1fr;
+  }
+}

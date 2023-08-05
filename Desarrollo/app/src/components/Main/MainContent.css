@@ -1,0 +1,66 @@
+.main {
+  position: relative;
+  min-height: 50%;
+  background-color: rgb(243, 238, 238);
+  grid-template-columns: 0.4fr 5fr 0.4fr;
+  /* Divide el contenido en tres columnas con el mismo ancho */
+}
+
+#ninyo {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+#lineas {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+/* Estilos adicionales para cada celda */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  max-width: 380px;
+}
+
+.search-button {
+  background-color: #621518;
+  color: white;
+  border: 2px solid #621518;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: white;
+  color: #621518;
+  border-color: #621518;
+}
+
+@media screen and (max-width: 850px) {
+  #ninyo, #lineas{
+    display: none;
+  }
+}
