@@ -87,4 +87,12 @@
   .slide-column {
     grid-column: 1 / -1; /* Las columnas ocupan todo el ancho */
   }
+  .slideshow {
+    height: 20vh;
+  }
+  .slide-content {
+   
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+  }
 }
