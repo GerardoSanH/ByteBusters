@@ -1,7 +1,7 @@
 main .main {
   display: grid;
-  height: 50%;
-  background-color: rgb(245, 193, 193);
+  min-height: 50%;
+  background-color: rgb(243, 238, 238);
   grid-template-columns: 0.4fr 5fr 0.4fr; /* Divide el contenido en tres columnas con el mismo ancho */
   
 }
@@ -9,6 +9,8 @@ main .main {
 .celda2{
   padding: 20px;
   border: 1px solid #ccc;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
   /* border-radius: 5px; */
 }
 
@@ -19,3 +21,62 @@ main .main {
 .celda1, .celda3 {
   background-color: #ffffff;
 }
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid #621518; */
+  border-radius: 30px;
+  padding: 5px;
+  width: 70%;
+  margin: 0 auto;
+  grid-row-start: 1; /* Comienza en la primera línea */
+  grid-row-end: 2;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  max-width: 380px;
+}
+
+.search-button {
+  background-color: #621518;
+  color: white;
+  border: 2px solid #621518;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: white;
+  color: #621518;
+  border-color: #621518;
+}
+
+@media screen and (max-width: 1080px) {
+  .celda1,
+  .celda3{
+    display: none;
+  }
+  main .main {
+    grid-template-columns: 0.4fr 7fr; 
+    
+  }
+  }
+
+  @media screen and (max-width: 720px) {
+   
+    main .main {
+      grid-template-columns: 1fr; 
+      
+    }
+    }

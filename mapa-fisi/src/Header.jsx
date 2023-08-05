@@ -3,16 +3,19 @@ import './Header.css';
 
 const slides = [
   {
-    text: 'Texto de la diapositiva 1:  Lorem ipsum dolor sit amet consectetur adipisicing elit... ',
-    image: 'image1.jpg',
+    textLeft: 'Texto de la diapositiva 1:  Lorem ipsum dolor sit amet consectetur adipisicing elit... ',
+    textRight: 'Contenido adicional 1: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    image: 'logo-fisi.png',
   },
   {
-    text: 'Texto de la diapositiva 2: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-    image: 'image2.jpg',
+    textLeft: 'Texto de la diapositiva 2: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    textRight: 'Contenido adicional 2: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    image: 'logo-fisi.png',
   },
   {
-    text: 'Texto de la diapositiva 3: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
-    image: 'image3.jpg',
+    textLeft: 'Texto de la diapositiva 3: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    textRight: 'Contenido adicional 3: Lorem ipsum dolor sit amet consectetur adipisicing elit...',
+    image: 'logo-fisi.png',
   },
   // Agrega más diapositivas aquí si lo deseas
 ];
@@ -31,9 +34,16 @@ function Header() {
   return (
     <header>
       <div className="slideshow">
-        <div className="slide">
-          <img src={slides[currentSlide].image} alt={`Slide ${currentSlide}`} />
-          <p>{slides[currentSlide].text}</p>
+        <div className="slide" style={{ backgroundColor: '#621518' }}>
+          <div className="slide-content">
+            <div className="img-container slide-column">
+              <img src={slides[currentSlide].image} alt={`Slide ${currentSlide}`} />
+            </div>
+            <div className="slide-column">
+              <div className="slide-text">{slides[currentSlide].textLeft}</div>
+              <div className="slide-text">{slides[currentSlide].textRight}</div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="slide-buttons">

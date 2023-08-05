@@ -9,6 +9,10 @@ function MainContent() {
         <img className='lineas-adorno' src="./lineas-ninio.jpg" alt="" />
         </div>
         <div className="celda2">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar..." />
+            <button class="search-button">Buscar</button>
+          </div>
           <p>Mapa interactivo</p>
         </div>
         <div className="celda3">
