@@ -1,27 +1,21 @@
 main .main {
   display: grid;
   height: 50%;
-  background-color: antiquewhite;
-  grid-template-columns: 1fr 5fr 1fr; /* Divide el contenido en tres columnas con el mismo ancho */
+  background-color: rgb(245, 193, 193);
+  grid-template-columns: 0.4fr 5fr 0.4fr; /* Divide el contenido en tres columnas con el mismo ancho */
   
 }
-.celda1,
-.celda2,
-.celda3 {
+
+.celda2{
   padding: 20px;
   border: 1px solid #ccc;
   /* border-radius: 5px; */
 }
 
+.lineas-adorno{
+  height: 100%;
+}
 /* Estilos adicionales para cada celda */
-.celda1 {
-  background-color: #fcdfff;
-}
-
-.celda2 {
-  background-color: antiquewhite;
-}
-
-.celda3 {
-  background-color: #fcdfff;
+.celda1, .celda3 {
+  background-color: #ffffff;
 }
