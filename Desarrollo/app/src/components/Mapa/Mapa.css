@@ -1,0 +1,48 @@
+* {
+   font-family: 'Poppins', sans-serif !important;
+}
+svg{
+   width: 100%;
+}
+
+.transform-component-module_wrapper__SPB86{
+   width: 100% !important;
+   height: auto;
+   border: 1ps solid black;
+}
+
+.transform-component-module_content__FBWxo{
+   width: 100% !important;
+   height: auto;
+}
+
+.map-section{
+   background-color: lightgray;
+   margin: 10px;
+   padding: 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 450px;
+}
+
+.selector{
+   margin-top: 10px;
+   display:  flex;
+   gap: 20px;
+}
+
+.map-wrapper{
+   width: 100% !important;
+   display: flex;
+   flex-direction: column;
+}
+
+
+svg g :is(path, rect):hover {
+   fill: aqua;
+}
+
+g :is(path, rect) {
+   transition: fill .5s;
+}

@@ -1,10 +1,10 @@
-const ComponentePrueba3 = () => {
+const Piso3 = () => {
    return (
       <svg
          version="1.1"
          id="Capa_1"
          xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 1133.9 1133.9"
+         viewBox="0 90 1133.9 900.9"
          xmlSpace="preserve">
          <style type="text/css">
             {`.st0{fill:#FFFFFF;stroke:#1D1D1B;stroke-miterlimit:10;}
@@ -24,11 +24,11 @@ const ComponentePrueba3 = () => {
          <path className="st3" d="M826.3,865.8H935v66.3c0,7.8-6.3,14.2-14.2,14.2h-80.4c-7.8,0-14.2-6.3-14.2-14.2V865.8z" />
          <path className="st0" d="M240.8,834.8h53.4v47h-67.6V849C226.6,841.2,233,834.8,240.8,834.8z" />
          <path className="st0" d="M1034.1,752.6l-0.3,32.3c-0.1,7.8-6.4,14-14.2,14H935v66.9H826.3v-66.9H400.1v36.5h0.2V928h-161v38.6h-76.9v-59 h-50.5V896c0-7.8,6.3-14.2,14.2-14.2h168.1V409.7H148.5c-6.7,0-12.1-5.4-12.1-12.1v-56.5c0-6.5,5.3-11.8,11.8-11.8h146v-78.4H150.6 c-7.8,0-14.2-6.3-14.2-14.2v-25.3h157.8v-45.5h105.7v45.5h413.8v-45.5h86.6v45.5h62.8v39.5H399.9v465.2h0.4v36.5H1034.1z" />
-         <g>
+         <g id="sshh">
             <path className="st0" d="M242.5,554h51.7v107.8h-65.9v-93.6C228.3,560.4,234.7,554,242.5,554z" />
             <text transform="matrix(1 0 0 1 241.2891 617.5791)" className="st1 st2">SSHH</text>
          </g>
-         <g>
+         <g id="sshh">
             <rect x="473.9" y="250.9" className="st0" width="81.7" height="45.5" />
             <text transform="matrix(1 0 0 1 492.5091 280.3091)" className="st1 st2">SSHH</text>
          </g>
@@ -89,4 +89,4 @@ const ComponentePrueba3 = () => {
    );
 }
 
-export default ComponentePrueba3;
+export default Piso3;
