@@ -1,4 +1,4 @@
-const Piso1 = (props) => (
+const Piso1 = () => (
    <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
@@ -9,7 +9,6 @@ const Piso1 = (props) => (
          enableBackground: "new 0 0 1133.9 992.1",
       }}
       viewBox="0 0 1133.9 992.1"
-      {...props}
    >
       <style>
          {
@@ -42,7 +41,7 @@ const Piso1 = (props) => (
       <text className="st2 st3" transform="translate(190.145 906.918)">
          {"1"}
       </text>
-      <g>
+      <g id="economia">
          <path
             d="M103.6 788.8h50.6v25.8h-44.9c-3.1 0-5.7-2.5-5.7-5.7v-20.1z"
             className="st0"
@@ -51,7 +50,7 @@ const Piso1 = (props) => (
             {"Econom\xEDa"}
          </text>
       </g>
-      <g>
+      <g id="dga">
          <path
             d="M117.8 705.8H187v82.9h-83.4V720c0-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -60,13 +59,13 @@ const Piso1 = (props) => (
             {"DGA"}
          </text>
       </g>
-      <g>
+      <g id="cerseu">
          <path d="M187 741.8h99.4v47H187z" className="st0" />
          <text className="st2 st3" transform="translate(209.825 770.128)">
             {"Cerseu"}
          </text>
       </g>
-      <g>
+      <g id="usgom">
          <path
             d="M234.1 614.5h51.7v34h-51.7c-7.8 0-14.2-6.3-14.2-14.2v-5.7c0-7.7 6.4-14.1 14.2-14.1z"
             className="st0"
@@ -75,7 +74,7 @@ const Piso1 = (props) => (
             {"USGOM"}
          </text>
       </g>
-      <g>
+      <g id="aulas-cd100">
          <path
             d="M392.4 623H1012c7.8 0 14.2 6.3 14.2 14.2v22.3H392.4V623z"
             className="st0"
@@ -84,7 +83,7 @@ const Piso1 = (props) => (
             {"Aulas con c\xF3digo 100"}
          </text>
       </g>
-      <g>
+      <g id="modulo-atencion-docente">
          <path d="M231.5 834.9h54.9v38.6h-54.9z" className="st0" />
          <text className="st2 st3" transform="translate(248.985 888.118)">
             {"Modulo de "}
@@ -96,7 +95,7 @@ const Piso1 = (props) => (
             {"docente"}
          </text>
       </g>
-      <g>
+      <g id="sshh">
          <path
             d="M234.7 460.9h51.7v107.8h-65.9v-93.6c0-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -105,7 +104,7 @@ const Piso1 = (props) => (
             {"SSHH"}
          </text>
       </g>
-      <g>
+      <g id="vestidores">
          <path
             d="M840.7 543.9h141.1c5.7 0 10.3 4.6 10.3 10.3v9.6c0 5.7-4.6 10.3-10.3 10.3H840.7c-5.7 0-10.3-4.6-10.3-10.3v-9.6c0-5.7 4.6-10.3 10.3-10.3z"
             className="st0"
@@ -114,7 +113,7 @@ const Piso1 = (props) => (
             {"Vestidores"}
          </text>
       </g>
-      <g>
+      <g id="sshh">
          <path d="M466.1 157.8h81.7v45.4h-81.7z" className="st0" />
          <text className="st2 st3" transform="translate(483.245 186.668)">
             {"SSHH"}
@@ -130,7 +129,7 @@ const Piso1 = (props) => (
          d="M284.2 72.8h107.7v45.5H284.2zM805.9 72.8H879c7.8 0 14.2 6.3 14.2 14.2v31.3h-87.3V72.8z"
          className="st1"
       />
-      <g>
+      <g id="capilla">
          <path
             d="M749.9 562.8H795c7.8 0 14.2 6.3 14.2 14.2v45.6h-73.5V577c0-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -139,13 +138,13 @@ const Piso1 = (props) => (
             {"Capilla"}
          </text>
       </g>
-      <g>
+      <g id="aulas-np">
          <path d="M391.9 72.8h413.8v45.5H391.9z" className="st0" />
          <text className="st2 st3" transform="matrix(1.0041 0 0 1 522.808 99.708)">
             {"Aulas Nuevo Pabellon"}
          </text>
       </g>
-      <g>
+      <g id="aulas-np">
          <path
             d="M142.8 72.8h142.5v45.5H128.6V87c0-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -157,7 +156,7 @@ const Piso1 = (props) => (
             {"Pabell\xF3n"}
          </text>
       </g>
-      <g>
+      <g id="auditorio">
          <path
             d="M142.8 357.8h165v85.8h-165c-7.8 0-14.2-6.3-14.2-14.2V372c0-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -172,21 +171,19 @@ const Piso1 = (props) => (
       <text className="st2 st3" transform="translate(1061.945 699.218)">
          {"3"}
       </text>
-      <g>
+      <g id="dir-esc-ciencias">
          <path
             d="M234.7 658.2h51.7v56.6h-51.7c-7.8 0-14.2-6.3-14.2-14.2v-28.3c0-7.7 6.4-14.1 14.2-14.1z"
             className="st0"
          />
-         <text className="st4 st2 st3" transform="translate(106.775 675.074)" />
-         <text className="st4 st2 st3" transform="translate(106.775 675.074)">
+         <text className=" st2 st3" transform="translate(106.775 675.074)">
             {"Dir. de Escuela "}
          </text>
-         <text className="st4 st2 st3" transform="translate(218.028 675.074)" />
-         <text className="st4 st2 st3" transform="translate(168.675 693.074)">
+         <text className=" st2 st3" transform="translate(168.675 693.074)">
             {"de CC"}
          </text>
       </g>
-      <g>
+      <g id="losa">
          <path
             d="M749.7 223.7h228.5c7.7 0 14 6.3 14 14V478c0 7.7-6.3 14-14 14H749.7c-7.7 0-14-6.3-14-14V237.7c0-7.7 6.3-14 14-14z"
             className="st0"
@@ -195,7 +192,7 @@ const Piso1 = (props) => (
             {"Losa Deportiva"}
          </text>
       </g>
-      <g>
+      <g id="quiosco">
          <path
             d="M815 773.2h70.6v26.6h-84.8v-12.4c.1-7.8 6.4-14.2 14.2-14.2z"
             className="st0"
@@ -204,26 +201,26 @@ const Piso1 = (props) => (
             {"Quiosco"}
          </text>
       </g>
-      <g>
+      <g id="aula-100">
          <path d="M392.4 705.8h106.8v36.5H392.4z" className="st0" />
          <text className="st2 st3" transform="translate(413.247 729.237)">
             {"Aula 100"}
          </text>
       </g>
-      <g>
+      <g id="aula-101">
          <path d="M554.3 729.2h2.3v12.1h-2.3z" className="st5" />
          <path d="M498.7 705.8h106.8v36.5H498.7z" className="st0" />
          <text className="st2 st3" transform="translate(523.221 729.237)">
             {"Aula 101"}
          </text>
       </g>
-      <g>
+      <g id="aula-102">
          <path d="M605 705.8h106.8v36.5H605z" className="st0" />
          <text className="st2 st3" transform="translate(627.697 728.987)">
             {"Aula 102"}
          </text>
       </g>
-      <g>
+      <g id="aula-103">
          <path d="M711.3 705.8h106.8v36.5H711.3z" className="st0" />
          <text className="st2 st3" transform="translate(733.804 729.237)">
             {"Aula 103"}
