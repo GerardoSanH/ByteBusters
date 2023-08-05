@@ -24,7 +24,7 @@ const ComponentePrueba2 = () => {
          </g>
          <g>
             <rect x="442.2" y="250.9" className="st0" width="81.7" height="45.5" />
-            <text transform="matrix(1 0 0 1 464.1288 279.074)" className="st2 st3">SSHH</text>
+            <text transform="matrix(1 0 0 1 462.1288 279.074)" className="st2 st3">SSHH</text>
          </g>
          <rect x="261.1" y="165.9" className="st1" width="107.7" height="45.5" />
          <path className="st1" d="M780.9,165.9h73.5c7.8,0,14.2,6.3,14.2,14.2v31.3h-87.7V165.9z" />
@@ -62,8 +62,10 @@ const ComponentePrueba2 = () => {
             <rect x="368.2" y="165.9" className="st0" width="412.7" height="45.5" />
             <text transform="matrix(1 0 0 1 519.5191 194.8991)" className="st2 st3">Laboratorios</text>
          </g>
-         <path className="st0" d="M145.2,450.8H290v85.8H145.2c-7.8,0-14.2-6.3-14.2-14.2V465C131,457.2,137.3,450.8,145.2,450.8z" />
-         <text transform="matrix(1 0 0 1 173.9991 498.7293)" className="st2 st3">Comedor</text>
+         <g>
+            <path className="st0" d="M145.2,450.8H290v85.8H145.2c-7.8,0-14.2-6.3-14.2-14.2V465C131,457.2,137.3,450.8,145.2,450.8z" />
+            <text transform="matrix(1 0 0 1 173.9991 498.7293)" className="st2 st3">Comedor</text>
+         </g>
          <g>
             <path className="st0" d="M118.9,165.9h142.2v45.5H104.7v-31.3C104.7,172.3,111,165.9,118.9,165.9z" />
             <text transform="matrix(0.9911 0 0 1 140.3442 186.6539)" className="st2 st3">Aulas Nuevo </text>
@@ -87,15 +89,13 @@ const ComponentePrueba2 = () => {
          </g>
          <g>
             <path className="st0" d="M738,620.4h65.6c7.8,0,14.2,6.3,14.2,14.2v118h-93.9v-118C723.8,626.8,730.1,620.4,738,620.4z" />
-            <text transform="matrix(1 0 0 1 748.494 674.9088)" className="st2 st3">Tercio </text>
-            <text transform="matrix(1 0 0 1 732.0939 691.7087)" className="st2 st3">estudiantil </text>
-            <text transform="matrix(1 0 0 1 759.0939 708.5089)" className="st2 st3">FISI</text>
+            <text transform="matrix(1 0 0 1 745.494 674.9088)" className="st2 st3">Tercio </text>
+            <text transform="matrix(1 0 0 1 728 691.7087)" className="st2 st3">estudiantil </text>
+            <text transform="matrix(1 0 0 1 758 708.5089)" className="st2">FISI</text>
          </g>
          <g>
-            <g>
-               <rect x="368.4" y="773.7" className="st0" width="70.2" height="25.4" />
-            </g>
-            <text transform="matrix(1 0 0 1 375.5795 792.1151)" className="st2 st3">Trofeos</text>
+            <rect x="368.4" y="773.7" className="st0" width="70.2" height="25.4" />
+            <text transform="matrix(1 0 0 1 373.5795 792.1151)" className="st2">Trofeos</text>
          </g>
       </svg>
    );
